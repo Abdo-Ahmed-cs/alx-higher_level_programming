@@ -4,6 +4,8 @@ def print_matrix_integer(matrix=[[]]):
         print()
     else:
         for vertex in matrix:
-            for item in vertex:
-                print("{:d}".format(item), end=" ")
-            print()
+            for index in range(len(vertex)):
+                if index < len(vertex) - 1:
+                    print("{:d}".format(vertex[index]), end=" ")
+                else:
+                    print("{:d}".format(vertex[index]))
