@@ -8,4 +8,5 @@ def print_matrix_integer(matrix=[[]]):
                 if index < len(vertex) - 1:
                     print("{:d}".format(vertex[index]), end=" ")
                 else:
-                    print("{:d}".format(vertex[index]))
+                    print("{:d}".format(vertex[index]), end="")
+            print()
