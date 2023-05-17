@@ -1,4 +1,4 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 def update_dictionary(a_dictionary, key, value):
     for k in a_dictionary:
         if k == key:
