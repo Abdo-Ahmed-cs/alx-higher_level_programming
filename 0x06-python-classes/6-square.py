@@ -12,13 +12,7 @@ class Square:
             size (int): the size of the square
             position (int, int): set contains position
         """
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
         self.__size = size
-        if not isinstance(position, tuple):
-            raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = position
 
     def area(self):
