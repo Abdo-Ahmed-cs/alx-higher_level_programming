@@ -10,9 +10,9 @@ class MagicClass:
         Args:
             radius: the radius of the shape
         """
-        if type(radius) is not int or type(radius) is not float:
-            raise TypeError('radius must be a number')
-            self.__radius = None
+        self.__radius = 0
+        if type(radius) is not int and type(radius) is not float:
+            raise TypeError("radius must be a number")
         else:
             self.__radius = radius
 
