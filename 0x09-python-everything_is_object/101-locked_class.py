@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ defining a locked class """
 
+
 class LockedClass:
     """
     defining a class that prevents the user from
@@ -9,4 +10,3 @@ class LockedClass:
     """
 
     __slots__ = ["first_name"]
-
