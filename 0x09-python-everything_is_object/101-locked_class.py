@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" defining a locked class """
+
 class LockedClass:
     """
     defining a class that prevents the user from
