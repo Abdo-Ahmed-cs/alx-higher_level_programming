@@ -17,18 +17,17 @@ class Rectangle:
             width: rectangle width
             height: rectangle height
         """
-        if self.__width is not int:
-            raise TypeError("width must be an integer")
-        elif self.__width < 0:
-            raise ValueError("width must be >= 0")
-        self.__width = width
-
-        if self.__height is not int:
+        self.__height = height
+        if type(self.__height) is not int:
             raise TypeError("height must be an integer")
         elif self.__height < 0:
             raise ValueError("height must be >= 0")
-        self.height = height
 
+        self.__width = width
+        if type(self.__width) is not int:
+            raise TypeError("width must be an integer")
+        elif self.__width < 0:
+            raise ValueError("width must be >= 0")
     @property
     def width(self):
         """
@@ -43,7 +42,7 @@ class Rectangle:
         ARGS:
             value: the value for the width
         """
-        if self.__width is not int:
+        if type(self.__width) is not int:
             raise TypeError("width must be an integer")
         elif self.__width < 0:
             raise ValueError("width must be >= 0")
@@ -62,7 +61,7 @@ class Rectangle:
         ARGS:
             value: the value for the height
         """
-        if self.__height is not int:
+        if type(self.__height) is not int:
             raise TypeError("height must be an integer")
         elif self.__height < 0:
             raise ValueError("height must be >= 0")
