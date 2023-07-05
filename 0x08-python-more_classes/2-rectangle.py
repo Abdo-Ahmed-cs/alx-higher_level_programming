@@ -64,10 +64,10 @@ class Rectangle:
         """
         a function that returns the area of the rect
         """
-        return self.width * self.height
+        return self.__width * self.__height
 
     def perimeter(self):
         """
         a function that returns the perimeter of the rect
         """
-        return (self.width + self.height) * 2
+        return (self.__width + self.__height) * 2
