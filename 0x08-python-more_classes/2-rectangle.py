@@ -70,4 +70,6 @@ class Rectangle:
         """
         a function that returns the perimeter of the rect
         """
+        if self.__width == 0 or self.__height == 0:
+            return 0
         return (self.__width + self.__height) * 2
