@@ -79,6 +79,8 @@ class Rectangle:
         prints the reactangle in a nicely printable string format
         the reactangle instance will be printed filled width '#' char
         """
+        if self.__width == 0 or self.__height == 0:
+            return ""
         rect_str = ''
         for i in range(self.__height):
             rect_str += '#' * self.__width
